@@ -12,6 +12,19 @@
         document.querySelector('.preloader').style.opacity = '0';
         document.querySelector('.preloader').style.display = 'none';
     }
+    
+    let isLearnMoreUp = false;
+    
+	document.getElementById("expandAboutButton").addEventListener("click", function() {
+	    isLearnMoreUp = !isLearnMoreUp;
+	    if (isLearnMoreUp) {
+		document.getElementById("expandAbout").innerHTML = `have always loved the process of learning and gathering information, and the school environment simply didn't
+		give me the amounts of information I was willing to take in - so I discovered areas online to learn from and naturally stumbled upon Computer Science and the world of code,
+		exciting my thirst for learning even more, helping me excel in school with a 3.87 GPA, and introducing me to online communities and making friends across the world from all walks of life along the way.`
+	    } else {
+		    document.getElementById("expandAbout").innerHTML = "";
+		}
+	});
 
     
     /*=====================================
